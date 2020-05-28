@@ -1,0 +1,231 @@
+@font-face {
+    font-family: publicSans;
+    src: url('./fonts/publicSans/PublicSans-Light.ttf');
+}
+
+@font-face {
+    font-family: publicSans-bold;
+    src: url('./fonts/publicSans/PublicSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: bitter;
+    src: url('./fonts/Bitter/Bitter-Regular.ttf');
+}
+
+body{
+  font-family: 'publicSans', sans-serif;
+  font-size: 16px;
+  background-color: #e9e9e9;
+}
+
+header{
+  height: 100px;
+}
+
+header img{
+  height: 60px;
+  padding: 8px;
+}
+
+span{
+  font-family: 'publicSans', sans-serif;
+  width: 100%;
+  font-size: 1em;
+  line-height: 200%;
+}
+
+p{
+  font-family: 'publicSans', sans-serif;
+  width: 100%;
+  font-size: 1em;
+  line-height: 200%;
+}
+
+h1{
+  width: 100%;
+  font-size: 3em;
+  font-family: 'bitter', serif;
+}
+
+h2{
+  font-size: 2.5em;
+  font-family: 'publicSans', sans-serif;
+}
+
+h3{
+
+  font-size: 2em;
+  font-family: 'publicSans', sans-serif;
+}
+
+h4{
+
+  font-size: 1.5em;
+  font-family: 'publicSans', sans-serif;
+}
+
+button{
+  margin-top: 20px;
+  width:100%;
+  font-family: 'publicSans', sans-serif;
+  font-size: 1em;
+  margin: 0.5%;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+button img {
+  padding-right:5px;
+    height: 25px;
+}
+
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#content__container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#goals__container{
+  padding: 20px;
+  background-color: white;
+  width: 60%;
+  margin: 1%;
+  border-radius: 15px;
+}
+
+#feedback__container{
+  padding: 20px;
+  background-color: white;
+  width: 30%;
+  margin: 1%;
+  border-radius: 15px;
+}
+
+.goalsForm{
+  display:none;
+  padding: 20px;
+  background-color: #f7f7f7;
+  width: 90%;
+  margin: auto;
+  border-radius: 15px;
+}
+
+.goalsHead{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.goalsHead h1{
+  width: 80%;
+}
+
+.addGoals{
+  width: 20%;
+}
+
+#setGoals__container{
+  padding: 10px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+}
+
+#completedGoals__container{
+  padding: 10px;
+  background-color: #c5d6d5;
+  border-radius: 10px;
+}
+
+.goal__container{
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 2px 0px 1px #e5e5e5;
+  transition: 200ms ease-in-out;
+}
+
+.goal__container img{
+  height: 45px;
+  padding: 8px;
+}
+
+.goal__container:hover {
+    transform: scale(1.02);
+}
+
+.goal-buttons__container {
+  width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon{
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+}
+
+.userImg{
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+}
+
+.goal-type {
+  text-align: center;
+  width: 25%;
+  margin: 8px;
+  padding: .5em;
+  background-color: #34b6dd;
+  color: white;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.goal-type2{
+  width: 25%;
+  margin: 8px;
+  font-weight: bold;
+  padding: .5em;
+  color: #17686d;
+  font-size: 1em;
+}
+
+.goal-estimate{
+  text-align: right;
+  width: 50%;
+  color: #008000
+}
+
+.goalsButton{
+  transition: all .2s ease-in-out;
+  box-sizing:border-box;
+  border: 5px solid #17686d;
+  background-color: #17686d;
+}
+
+.goalsButton:hover{
+  background-color: #114c4c;
+  transform: scale(1.05);
+}
+
+.goalsButton:focus{
+  outline: none;
+  color: white;
+  background-color: #f6ae1a;
+  border: 5px solid #f6ae1a;
+}
