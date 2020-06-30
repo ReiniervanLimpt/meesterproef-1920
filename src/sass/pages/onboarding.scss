@@ -1,0 +1,715 @@
+#onboardingBody {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-size: 14px;
+    background-color: white;
+    animation: page-transition .1s ease-in-out;
+}
+
+#onboarding__form {
+    background-color: white;
+    margin: 0;
+    padding: 40px;
+    width: 80%;
+    height: 34em;
+    border-radius: 0px 10px 10px 0px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 2px 0 1px #e5e5e5;
+}
+
+.flex-center {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    margin: 4em auto;
+    align-items: center;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    height: 40em;
+}
+
+#code {
+    padding-left: 1em;
+    width: 15em;
+    margin-bottom: 0;
+    letter-spacing: 1em;
+    text-align: center;
+    transition: all 350ms ease-in-out;
+}
+
+/* Hide all steps by default: */
+.tab {
+    display: none;
+}
+
+.current__tab {
+    display: block;
+    animation: fade 0.7s ease-in-out;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.transitionUp {
+    animation: transitionUp 1s ease-in-out;
+}
+
+
+/* Style the input fields */
+.tab input,
+.current__tab input {
+    font-family: publicSans, sans-serif;
+    padding: 10px;
+    width: 20em;
+    display: block;
+    font-size: 13px;
+    border: 1px solid #aaaaaa;
+    border-radius: 10px;
+    margin: 1em;
+    margin-left: 0;
+    transition: all 350ms ease-in-out
+}
+
+.steps {
+    background: #e8e8ed;
+    width: 10%;
+    border-radius: 10px 0px 0px 10px;
+    z-index: 2;
+    height: 34em;
+    box-shadow: 0 2px 0 1px #e5e5e5;
+}
+
+.step {
+    position: relative;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    background-color: $green;
+    margin: auto;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    transition: all 150ms ease-in-out;
+
+    &::after {
+        content: "";
+        height: 8.5em;
+        border-left: 2px $green solid;
+        top: 0;
+        position: absolute;
+        z-index: -1;
+    }
+
+    &:last-child::after {
+        content: "";
+        height: 0em;
+        border-left: 2px $green solid;
+        top: 0;
+        position: absolute;
+        z-index: -1;
+    }
+}
+
+/* Mark the active step: */
+.step.finish {
+    background-color: #58a9ad;
+
+    &::after {
+        content: "";
+        height: 8.5em;
+        border-left: 2px #58a9ad solid;
+        top: 0;
+        position: absolute;
+    }
+
+    &:last-child::after {
+        content: "";
+        height: 0em;
+        border-left: 2px #ccc solid;
+        top: 0;
+        position: absolute;
+        z-index: -1;
+    }
+}
+
+.step.active {
+    background-color: $yellow;
+
+    &::after {
+        content: "";
+        height: 8.5em;
+        border-left: 2px $green solid;
+        top: 0;
+        position: absolute;
+    }
+
+    &:last-child::after {
+        content: "";
+        height: 0em;
+        border-left: 2px #ccc solid;
+        top: 0;
+        position: absolute;
+        z-index: -1;
+    }
+}
+
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+#prevBtn {
+    background-color: $grey;
+    margin-right: 17em;
+}
+
+#onboarding__form #prevBtn,
+#onboarding__form #nextBtn {
+    font-family: publicSans-medium, sans-serif;
+    border-radius: 5px;
+    transition: all .2s ease-in-out;
+    display: inline-block;
+    align-items: center;
+    margin-top: 2em;
+    position: relative;
+    z-index: 99;
+}
+
+#done {
+    margin-top: 1.5em;
+    width: 20em;
+    background-color: $yellow;
+}
+
+#onboarding__form a {
+    color: rgb(150, 148, 148);
+    font-size: 11px;
+    margin: 0;
+}
+
+
+#trappetje1 {
+    position: absolute;
+    width: 75%;
+    margin-left: 30%;
+}
+
+#trappetje2 {
+    position: absolute;
+    width: 85%;
+    margin-left: 30%;
+}
+
+#trappetje3 {
+    position: absolute;
+    width: 70%;
+    margin-left: 25%;
+    transform: rotate(15deg);
+}
+
+
+#trappetje4 {
+    position: absolute;
+    width: 75%;
+    margin-left: 30%;
+}
+
+#letter {
+    position: absolute;
+    width: 30%;
+    margin-top: 5%;
+    margin-left: 55%;
+    z-index: 0;
+    transition: all 350ms ease-in-out;
+
+    & .st1 {
+        transform: translateY(2%);
+        transition: all 350ms ease-in-out;
+    }
+
+    & .st1:hover {
+        transform: translateY(-3%);
+        transition: all 350ms ease-in-out;
+    }
+
+    .st2 {
+        fill: $green;
+    }
+
+    .st4 {
+        fill: #E8E8ED;
+    }
+}
+
+#connection {
+    position: absolute;
+    width: 45%;
+    top: 48%;
+    margin-left: 50%;
+    z-index: 0;
+    transform: rotate(-30deg);
+    transition: all 350ms ease-in-out;
+
+    .st0 {
+        stroke: #E8E8ED;
+        stroke-width: 5;
+    }
+
+    .st1 {
+        fill: $green;
+    }
+
+    .st2 {
+        fill: white;
+    }
+}
+
+#airplaine {
+    position: absolute;
+    width: 50%;
+    margin-top: -5%;
+    margin-left: 35%;
+    z-index: 0;
+    transition: all 350ms ease-in-out;
+
+    & .st {
+        fill: $green;
+    }
+
+    & .st1 {
+        fill: $green;
+    }
+
+    & .st0 {
+        fill: #E8E8ED;
+    }
+
+    & .st1:hover {
+        transform: translateY(-3%);
+        transition: all 350ms ease-in-out;
+    }
+}
+
+#balloons {
+    position: absolute;
+    width: 20%;
+    margin-top: -15%;
+    margin-left: 55%;
+    z-index: 0;
+    transition: all 350ms ease-in-out;
+
+    .st0 {
+        fill: $green;
+    }
+
+    .st0:hover {
+        fill: $yellow;
+    }
+
+    path {
+        stroke: #E8E8ED;
+        stroke-width: 2;
+        stroke-linejoin: round;
+    }
+}
+
+/*--- svg animatie ---*/
+.st0 {
+    fill: #e8e8ed;
+
+    &:nth-child(10) {
+        fill: #e8e8ed;
+        animation: circles 10s ease-in-out infinite;
+        animation-delay: 0.5s;
+    }
+
+    &:nth-child(17) {
+        fill: #e8e8ed;
+        animation: circles 10s ease-in-out infinite;
+        animation-delay: 8s;
+    }
+
+    &:nth-child(19) {
+        fill: #e8e8ed;
+        animation: circles 7s ease-in-out infinite;
+        animation-delay: 2s;
+    }
+
+    &:nth-child(26) {
+        fill: #e8e8ed;
+        animation: circles 10s ease-in-out infinite;
+        animation-delay: 4s;
+    }
+
+    &:nth-child(30) {
+        fill: #e8e8ed;
+        animation: circles 10s ease-in-out infinite;
+        animation-delay: 2s;
+    }
+
+    &:nth-child(37) {
+        fill: #e8e8ed;
+        animation: circles 6s ease-in-out infinite;
+        animation-delay: 6s;
+    }
+
+    &:nth-child(39) {
+        fill: #e8e8ed;
+        animation: circles 10s ease-in-out infinite;
+        animation-delay: 0s;
+    }
+
+    &:nth-child(46) {
+        fill: #e8e8ed;
+        animation: circles 10s ease-in-out infinite;
+        animation-delay: 2s;
+    }
+
+    &:nth-child(46) {
+        fill: #e8e8ed;
+        animation: circles 10s ease-in-out infinite;
+        animation-delay: 3s;
+    }
+
+    &:nth-child(47) {
+        fill: #e8e8ed;
+        animation: circles 10s ease-in-out infinite;
+        animation-delay: 7s;
+    }
+
+    &:nth-child(49) {
+        fill: #e8e8ed;
+        animation: circles 10s ease-in-out infinite;
+        animation-delay: 2s;
+    }
+
+    &:nth-child(51) {
+        fill: #e8e8ed;
+        animation: circles 10s ease-in-out infinite;
+        animation-delay: 5s;
+    }
+
+    &:nth-child(55) {
+        fill: #e8e8ed;
+        animation: circles 10s ease-in-out infinite;
+        animation-delay: 1s;
+    }
+
+    &:nth-child(58) {
+        fill: #e8e8ed;
+        animation: circles 10s ease-in-out infinite;
+        animation-delay: 0s;
+    }
+
+    &:nth-child(66) {
+        fill: #e8e8ed;
+        animation: circles 10s ease-in-out infinite;
+        animation-delay: 0s;
+    }
+
+    &:nth-child(67) {
+        fill: #e8e8ed;
+        animation: circles 10s ease-in-out infinite;
+        animation-delay: 3s;
+    }
+
+    &:nth-child(82) {
+        fill: #e8e8ed;
+        animation: circles 10s ease-in-out infinite;
+        animation-delay: 0.9s;
+    }
+
+    &:nth-child(93) {
+        fill: #e8e8ed;
+        animation: circles 10s ease-in-out infinite;
+        animation-delay: 5s;
+    }
+
+    &:nth-child(92) {
+        fill: #e8e8ed;
+        animation: circles 10s ease-in-out infinite;
+        animation-delay: 2s;
+    }
+
+    &:nth-child(95) {
+        fill: #e8e8ed;
+        animation: circles 10s ease-in-out infinite;
+        animation-delay: 0.9s;
+    }
+
+    &:nth-child(107) {
+        fill: #e8e8ed;
+        animation: circles 9s ease-in-out infinite;
+        animation-delay: 0.9s;
+    }
+
+    &:nth-child(120) {
+        fill: #e8e8ed;
+        animation: circles 5s ease-in-out infinite;
+        animation-delay: 0.9s;
+    }
+
+
+    transition: all 350ms ease-in-out
+}
+
+#trappetje1 .st0:hover,
+#trappetje2 .st0:hover,
+#trappetje3 .st0:hover,
+#trappetje4 .st0:hover {
+    fill: $green;
+}
+
+@keyframes circles {
+
+    0% {
+        fill: #e8e8ed;
+    }
+
+    50% {
+        fill: $green;
+    }
+
+    100% {
+        fill: #e8e8ed;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+
+    #letter {
+        width: 18%;
+        margin-top: 2%;
+        margin-left: 65%;
+    }
+
+    #airplaine {
+        width: 50%;
+        margin-top: -5%;
+        margin-left: 40%;
+    }
+
+    #connection {
+        width: 30%;
+        margin-top: -5%;
+        margin-left: 60%;
+    }
+
+    #trappetje1 {
+        width: 50%;
+        margin-left: 55%;
+    }
+
+    #trappetje2 {
+        width: 50%;
+        margin-left: 55%;
+    }
+
+    #trappetje3 {
+        width: 55%;
+        margin-left: 50%;
+        margin-top: -10%;
+    }
+
+    #trappetje4 {
+        width: 55%;
+        margin-left: 50%;
+    }
+
+    #balloons {
+        margin-top: -5%;
+        width: 13%;
+        margin-left: 70%;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    #onboardingBody {
+        font-size: 12px;
+        overflow: auto;
+    }
+
+    #airplaine {
+        margin-left: 40%;
+    }
+
+    #letter {
+        width: 15%;
+        margin-top: 4%;
+        margin-left: 65%;
+    }
+
+    #trappetje1 {
+        width: 55%;
+        margin-top: -3%;
+        margin-left: 50%;
+    }
+
+    #trappetje2 {
+        width: 55%;
+        margin-top: -3%;
+        margin-left: 50%;
+    }
+
+    #connection {
+        margin-top: -2%;
+        width: 30%;
+        margin-left: 60%;
+
+    }
+
+    #trappetje3 {
+        width: 60%;
+        margin-top: -10%;
+        margin-left: 45%;
+    }
+
+    #trappetje4 {
+        width: 55%;
+        margin-left: 50%;
+    }
+
+    #balloons {
+        margin-top: -10%;
+        width: 16%;
+        margin-left: 65%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #onboardingBody {
+        font-size: 12px;
+        overflow: auto;
+    }
+
+    #trappetje1 {
+        width: 65%;
+        margin-top: -3%;
+        margin-left: 40%;
+    }
+
+    #letter {
+        width: 15%;
+        margin-top: 5%;
+        margin-left: 70%;
+    }
+
+    #trappetje2 {
+        width: 75%;
+        margin-top: -4%;
+        margin-left: 40%;
+    }
+
+    #connection {
+        margin-top: 7%;
+        width: 20%;
+        margin-left: 70%;
+
+    }
+
+    #trappetje3 {
+        width: 50%;
+        margin-top: -2%;
+        margin-left: 55%;
+    }
+
+    #trappetje4 {
+        width: 60%;
+        margin-top: -4%;
+        margin-left: 40%;
+    }
+
+    #balloons {
+        margin-top: -20%;
+        width: 16%;
+        margin-left: 55%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #onboardingBody {
+        font-size: 12px;
+        overflow: auto;
+    }
+
+    .flex-center {
+        width: 100%;
+        margin: 4em auto;
+    }
+
+    #letter {
+        width: 13%;
+        margin-top: 5%;
+        margin-left: 70%;
+    }
+
+    #trappetje2 {
+        width: 65%;
+        margin-top: -2%;
+    }
+
+    #connection {
+        margin-top: 5%;
+        margin-left: 65%;
+    }
+
+    #trappetje3 {
+        width: 60%;
+        margin-top: -6%;
+        margin-left: 40%;
+    }
+
+    #balloons {
+        margin-top: -13%;
+        width: 16%;
+        margin-left: 55%;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+
+    #letter {
+        width: 15%;
+        margin-top: 18%;
+        margin-left: 65%;
+    }
+
+    #connection {
+        margin-top: 20%;
+        margin-left: 70%;
+    }
+
+    #trappetje2 {
+        width: 50%;
+        margin-top: 15%;
+        margin-left: 50%;
+    }
+
+    #trappetje3 {
+        width: 40%;
+        margin-top: 10%;
+        margin-left: 60%;
+    }
+}

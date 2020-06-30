@@ -1,0 +1,483 @@
+#team__container {
+  position: relative;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: $light-grey;
+  border-radius: $border-radius-big;
+  margin-top: 2em;
+  background-image: url(/images/background.png);
+  background-size: 500%;
+}
+
+.container__teampage {
+  display: flex;
+}
+
+#teamoverview__container {
+  position: relative;
+  width: 60%;
+  height: fit-content;
+  background-color: $white;
+  height: 100vh;
+  padding: 2.1em 3em 3em 3em;
+  overflow-y: auto;
+}
+
+#team-aside__container {
+  width: 40%;
+  background-color: $background-color;
+  padding: 2.1em 3em 3em 3em;
+  height: fit-content;
+  overflow-y: auto;
+  height: 100vh;
+
+  & > p:first-of-type {
+    font-size: 1.2em;
+  }
+
+  & .profile__challange__container {
+    background-color: $light-grey;
+    border-radius: $border-radius-small;
+    padding: .1em 0em;
+  }
+}
+
+#team-aside__container h4 {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.container .goal__container span,
+.container .goal__container p {
+  font-size: 12px;
+}
+
+.profileinfo-meta {
+  width: 100%;
+}
+
+.container {
+  align-items: center;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  background-color: $light-grey;
+  border-radius: $border-radius-big;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.profile__container {
+  position: relative;
+  background-color: white;
+  margin: 0.6%;
+  padding: 1em;
+  max-width: 32%;
+  max-height: 13em;
+  color: black;
+  transition: 200ms ease-in-out;
+  border-radius: $border-radius-big;
+  box-shadow: 0px 2px 0px 1px #e5e5e5;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.collapse {
+  max-width: 100%;
+  max-height: 100% !important;
+}
+
+.profile__container h3 {
+  margin: 0;
+  margin-top: 1em;
+  font-size: 15px;
+  font-family: publicSans-medium;
+}
+
+.profile__container a {
+  font-family: publicSans-medium;
+  color: black;
+  transition: 200ms ease-in-out;
+}
+
+.profile__container a:hover {
+  font-family: publicSans-medium;
+  color: $yellow;
+}
+
+.profile__container img {
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 0.75em;
+  width: 100px;
+  height: 100px;
+  transition: al 200ms ease-in-out;
+}
+
+.collapse img {
+  transition: all 200ms ease-in-out;
+}
+
+.profileinfo__container {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3em;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  text-align: center;
+  padding-left: 3em;
+}
+
+.flex-container2 {
+  display: flex;
+  align-items: center;
+  & img{
+    border-radius: 0;
+  }
+}
+
+.flex-container2 img {
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.flex-container2 h3 {
+  margin: 0;
+  margin-left: 1em;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.info__container {
+  font-size: 14px;
+  font-family: "bitter", serif;
+  width: 2.5em;
+  height: 2.5em;
+  display: inline-flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0.4em;
+  box-shadow: 0 2px 0 1px #e5e5e5;
+  transition: all 0.2s ease-in-out;
+}
+
+.profile_card {
+  display: flex;
+  width: 20em;
+}
+
+.info__container:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 2px 0px 1px transparent;
+}
+
+.player__container {
+  background-color: white;
+  margin: 0.5em;
+  padding: 1em;
+  width: 30%;
+  height: 14em;
+  margin: 0.5em 0.3em 0.5em 0.3em;
+  color: black;
+  transition: 200ms ease-in-out;
+  border-radius: $border-radius-big;
+  box-shadow: 0px 2px 0px 1px #e5e5e5;
+  
+  & p {
+    line-height: 150%;
+    margin-top: .5em;
+  }
+}
+
+.player__container img {
+  width: 90px;
+  height: 90px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  display: block;
+  background: linear-gradient(-90deg,
+      #ffd000,
+      #ffd000,
+      rgb(252, 30, 97),
+      #ffd000,
+      #ffd000);
+  background-size: 400% 400%;
+  animation: gradient 15s ease-in-out infinite;
+  background-clip: padding-box;
+  padding: 3px;
+  margin: 0.7em auto;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.playerinfo__container {
+  padding: 0;
+  text-align: left;
+}
+
+.playerinfo__container a {
+  font-family: publicSans-medium;
+  font-size: 13px;
+  color: black;
+}
+
+.playerinfo__container p {
+  font-size: 11px;
+  color: black;
+}
+
+.playerinfo__container a:hover {
+  color: $yellow;
+}
+
+.statistic__container {
+  font-size: 14px;
+  width: 45%;
+  margin: 2.5%;
+  padding: 1em;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 2px 0px 1px #e5e5e5;
+}
+
+#all-team-goals {
+  margin: 0.8em;
+  border-left: 5px solid $light-blue;
+}
+
+#all-team-goals h3,
+#completer-team-goals h3,
+#all-team-compliments h3,
+#my-team-compliments h3 {
+  margin-left: 1em;
+}
+
+#completer-team-goals {
+  margin: 0.5em;
+  border-left: 5px solid $light-blue;
+}
+
+#all-team-compliments {
+  margin: 0.5em;
+  border-left: 5px solid $red;
+}
+
+#my-team-compliments {
+  margin: 0.5em;
+  border-left: 5px solid $red;
+}
+
+.strong-wrapper {
+  padding: 0;
+  width: 39%;
+}
+
+.strong__super-container {
+  align-items: center;
+  padding: 10px;
+  background-color: $light-grey;
+  border-radius: $border-radius-big;
+  margin-top: 1em;
+  width: 100%;
+}
+
+.strong__container {
+  margin: 1em;
+  padding: 0.2em 1em 0.2em 1em;
+  width: fit-content;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0px 2px 0px 1px #e5e5e5;
+  transition: 200ms ease-in-out;
+}
+
+.strong__container span {
+  font-size: 12px;
+}
+
+.goal-wrapper {
+  padding: 0;
+  width: 59%;
+}
+
+.goalsuper-container span,
+.goalsuper-container p {
+  font-size: 10px;
+}
+
+.goalsuper-container {
+  align-items: center;
+  padding: 5px;
+  background-color: $light-grey;
+  border-radius: $border-radius-big;
+  margin-top: 1em;
+  max-height: 15em;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.achievement__super-container {
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  background-color: $light-grey;
+  border-radius: $border-radius-big;
+  margin: 0;
+  margin-top: 1em;
+}
+
+.achievement-wrapper {
+  margin: 0;
+  padding: 0;
+  width: 39%;
+  margin-top: 1em;
+}
+
+.achievement-wrapper img {
+  width: 30px;
+  height: 30px;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.challenges-wrapper {
+  margin: 0;
+  margin-top: 1em;
+  width: 59%;
+
+  & .leaderboard__challange img {
+    width: initial;
+  }
+}
+
+.challenge__super-container {
+  align-items: center;
+  padding: 5px;
+  background-color: $light-grey;
+  border-radius: $border-radius-big;
+  margin-top: 1em;
+  max-height: 15em;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.team-admin-options{
+  margin: 0% 5%;
+  left: 0;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  position:absolute;
+  top: 0.5em;
+  height: 2em;
+  & img{
+    width: 30px;
+    height: 25px;
+    margin: 0;
+  }
+  & .admin-checkbox{
+    display: block;
+  }
+}
+
+
+//made these checkboxes using https://www.w3schools.com/howto/howto_css_custom_checkbox.asp
+.checkbox-container {
+  display: block;
+  width: auto;
+  position: relative;
+  cursor: pointer;
+  font-size: 1.5em;
+   & input {
+     position: absolute;
+     opacity: 0;
+     cursor: pointer;
+     height: 0;
+     width: 0;
+   }
+}
+
+.checkmark {
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.checkbox-container:hover input ~ .checkmark {
+  background-color: $grey;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+  background-color: white;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox-container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid $light-blue;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.admin-enabler, .admin-enabler-button {
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  display: block !important;
+}
+
+.admin-enabler-button {
+  top: 1.5em;
+}

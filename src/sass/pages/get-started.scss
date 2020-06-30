@@ -1,0 +1,224 @@
+.get-started {
+    background-color: #D2D1D7;
+    list-style-type: none;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 0;
+    margin-bottom: 1em;
+}
+
+.get-started a {
+    color: #4a494a;
+    text-decoration: none;
+    margin-top: 1em;
+}
+
+.full-width {
+    width: 100%!important;
+}
+
+.team__card {
+    width: 25%;
+    height: fit-content;
+    background-color: $white;
+    padding: 2em;
+    box-shadow: 0 2px 0 1px #e5e5e5;
+    border-radius: 10px;
+}
+
+.team-user-img {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-bottom: 2em;
+    border-radius: 50%;
+    display: block;
+}
+
+.team_card__container {
+    align-items: center;
+    padding: 10px;
+    display: flex;
+    background-color: $light-grey;
+    border-radius: $border-radius-big;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.team_card__container a {
+    margin-top: 27em;
+    text-decoration: none;
+    color: #4a494a;
+    font-size: 12px;
+    transition: all 350ms ease-in-out
+}
+
+.person__card-container {
+    width: 70%;
+    display: flex;
+    overflow: hidden;
+    overflow-x: auto;
+}
+
+.person__card {
+    width: fit-content;
+    margin: 0.5em;
+    background-color: $white;
+    padding: 2em;
+    box-shadow: 0 2px 0 1px #e5e5e5;
+    border-radius: 10px;
+}
+
+.person__card img {
+    width: 60px;
+    height: 60px;
+    margin: 0.5em auto;
+    display: block;
+    border-radius: 50%;
+}
+
+.team_card__container a:hover {
+    color: $yellow;
+}
+
+.team__card input {
+    font-family: publicSans, sans-serif;
+    padding: 10px;
+    width: 10em;
+    display: block;
+    font-size: 13px;
+    border: 1px solid #aaaaaa;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    transition: all 350ms ease-in-out
+}
+
+.team__card input:focus {
+    border: 1px solid transparent;
+    outline: none;
+    box-shadow: 0 0 0 3px $green;
+}
+
+.team__card button {
+    font-size: 11px;
+    width: 8em;
+    height: 3em;
+    margin: 0 auto;
+}
+
+.invite-container textarea {
+    border-radius: 5px;
+    font-family: publicSans, sans-serif;
+    background-color: white;
+    padding: 2em;
+    border: none;
+    display: block;
+    width: 25em;
+    height: 7em;
+
+    transition: all 350ms ease-in-out;
+
+    &:focus {
+        border: 1px solid transparent;
+        outline: none;
+        box-shadow: 0 0 0 3px $green;
+    }
+}
+
+.sign-up {
+    padding: 10px;
+    background-color: $light-grey;
+    border-radius: $border-radius-big;
+    width: 25em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.invite-container {
+    padding: 10px;
+    background-color: $light-grey;
+    border-radius: $border-radius-big;
+    width: fit-content;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.sign-up input {
+    font-family: publicSans, sans-serif;
+    padding: 10px;
+    width: 20em;
+    display: block;
+    font-size: 13px;
+    border: 1px solid #aaaaaa;
+    border-radius: 10px;
+    margin: 1em;
+    margin-top: 2.3em;
+    margin-bottom: 2.3em;
+    margin-left: 0;
+
+    transition: all 350ms ease-in-out;
+
+    &:focus {
+        border: 1px solid transparent;
+        outline: none;
+        box-shadow: 0 0 0 3px $green;
+    }
+}
+
+.margin-top {
+    margin-top: 2em;
+}
+
+#finish {
+    text-decoration: none;
+    font-family: publicSans-medium, sans-serif;
+    padding: 10px;
+    background-color: #17686d;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-right: auto;
+    margin-bottom: 2em;
+    height: 50px;
+    border: none;
+    width: 10em;
+    transition: all .2s ease-in-out;
+    display: flex;
+    align-items: center;
+}
+
+.items-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5em;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .team__card {
+        width: 55%;
+        height: fit-content;
+        background-color: $white;
+        padding: 2em;
+        box-shadow: 0 2px 0 1px #e5e5e5;
+        border-radius: 10px;
+    }
+
+    .team__card input {
+        font-family: publicSans, sans-serif;
+        padding: 10px;
+        width: 100%;
+        display: block;
+        font-size: 10px;
+        border: 1px solid #aaaaaa;
+        border-radius: 10px;
+        margin: 0 auto;
+        margin-bottom: 2em;
+        transition: all 350ms ease-in-out
+    }
+}

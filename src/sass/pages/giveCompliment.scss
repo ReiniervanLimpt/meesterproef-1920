@@ -1,0 +1,378 @@
+#team2__container,
+#option__container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#team2__container {
+    margin-top: 1.5em;
+
+    & > p {
+        margin-right: 1.5em;
+    }
+}
+
+#option__container {
+    font-family: 'publicSans', sans-serif;
+    justify-content: space-between;
+    height: 4em;
+    margin-bottom: 1em;
+
+    & > p {
+        margin-right: 1em;
+    }
+
+    & input[type="radio"] {
+        display: none;
+    }
+
+    & label {
+        cursor: pointer;
+        margin-right: 1em;
+        padding: .75em;
+        border-radius: $border-radius-small;
+        border: 1px solid $grey;
+        color: $grey;
+        font-size: 13px;
+        width: 14em;
+        text-align: center;
+        user-select: none;
+
+        &:hover {
+            color: $red;
+            border-color: $red;
+        }
+    }
+
+    & input[type="radio"]:checked + label {
+        cursor: pointer;
+        background-color: $red;
+        color: $white;
+        border: none;
+        border: 1px solid $red;
+    }
+}
+
+#select__container {
+    & #select-button__container {
+        display: flex;
+
+        & button {
+            margin: 1em 1em 0 0;
+            width: auto;
+            padding-left: 0;
+
+            &:nth-of-type(1) {
+                background-color: $white;
+                color: $green;
+
+                &:focus {
+                    background-color: $white;
+                }
+            }
+
+            &:nth-of-type(2) {
+                background-color: $white;
+                color: $grey;
+
+                &:focus {
+                    background-color: $white;
+                }
+            }
+
+            &:focus {
+                background-color: $green;
+            }
+        }
+    }
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+#team-member__container {
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    overflow-y: auto;
+    height: 65vh;
+
+    & input[type="checkbox"]:checked + label img {
+        border: 5px solid $yellow;
+    }
+
+    & > div {
+        display: flex;
+        flex-direction: column;
+        margin: 0em auto 6em auto;
+
+        & p {
+            text-align: center;
+        }
+
+        & span {
+            color: $grey;
+            margin-top: .25em;
+            font-size: 14px;
+            text-align: center;
+            margin-top: 0;
+        }
+
+        & label  {
+            width: 10em;
+            height: 10em;
+
+            & img {
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                margin: 0 auto;
+                margin-bottom: .5em;
+                cursor: pointer;
+                border: 5px solid $white;
+                transition: 0.2s ease-in-out;
+
+                &:hover {
+                    border: 5px solid $green;
+                    transition: 0.2s ease-in-out;
+                    transform: rotate(7deg);
+                }
+            }
+        }
+    }
+}
+
+#compliment__container {
+    width: 100%;
+    right: 0;
+    height: 100%;
+
+    h1 {
+        margin-bottom: 1em;
+    }
+
+    & form {
+        display: flex;
+        position: relative;
+    }
+
+    #select__container {
+        padding: 2.1em 3em 3em 3em;
+        background-color: $white;
+        min-height: 100vh;
+        width: 70%;
+    }
+
+    aside {
+        width: 30%;
+        padding: 2.1em 3em 3em 3em;
+        background-color: $background-color;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    & textarea {
+        border-radius: $border-radius-small;
+        font-family: 'publicSans', sans-serif;
+        background-color: $light-grey;
+        padding: 2em;
+        border: none;
+        margin-top: 2em;
+        display: block;
+        width: 100%;
+        margin-bottom: 2em;
+
+        &:focus {
+            outline: none;
+            border: none;
+        }
+
+        &::placeholder {
+            color: $grey;
+        }
+    }
+
+    & button {
+        margin-top: 2em;
+    }
+}
+
+#more-information {
+    & #goals__container {
+        height: 31vh;
+        overflow-y: auto;
+        display: none;
+        flex-direction: column;
+        background-image: none;
+
+        & > p {
+            padding: .5em;
+        }
+    }
+}
+
+@keyframes rotate {
+	100% {
+		transform: rotate(1turn);
+	}
+}
+
+#super-compliment__container {
+    display: flex;
+    align-items: center;
+
+    & p {
+        margin-right: 1em;
+    }
+
+    /* https://codepen.io/Chester/pen/QPoyjN */
+    & label {
+        cursor: pointer;
+        margin-right: 2em;
+        padding: .75em;
+        border-radius: $border-radius-small;
+        border: 1px solid $grey;
+        color: $grey;
+        font-size: 13px;
+        text-align: center;
+        user-select: none;
+        position: relative;
+        overflow: hidden;
+        z-index: 0;
+        width: 17em;
+
+        &:hover {
+            border: 1px solid $white;
+
+            &::before {
+                content: '';
+                position: absolute;
+                z-index: -2;
+                left: -250%;
+                top: -340%;
+                width: 600%;
+                height: 800%;
+                background-color: $green;
+                background-repeat: no-repeat;
+                background-size: 50% 50%, 50% 50%;
+                background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+                background-image: linear-gradient($green, $green), linear-gradient($yellow, $yellow), linear-gradient($red, $red), linear-gradient($light-blue, $light-blue);
+                animation: rotate 12s linear infinite;
+                box-sizing: border-box;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                z-index: -1;
+                left: 6px;
+                top: 6px;
+                width: calc(100% - 12px);
+                height: calc(100% - 12px);
+                background: $white;
+                box-sizing: border-box;
+            }
+        }
+    }
+
+    & input[type="checkbox"]:checked + label {
+        cursor: pointer;
+        color: $black;
+        border: none;
+        border: 1px solid $white;
+        z-index: 0;
+
+        &::before {
+            content: '';
+            position: absolute;
+            z-index: -2;
+            left: -250%;
+            top: -340%;
+            width: 600%;
+            height: 800%;
+            background-color: $green;
+            background-repeat: no-repeat;
+            background-size: 50% 50%, 50% 50%;
+            background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+            background-image: linear-gradient($green, $green), linear-gradient($yellow, $yellow), linear-gradient($red, $red), linear-gradient($light-blue, $light-blue);
+            box-sizing: border-box;
+            animation: rotate 12s linear infinite;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            left: 6px;
+            top: 6px;
+            width: calc(100% - 12px);
+            height: calc(100% - 12px);
+            background: white;
+            box-sizing: border-box;
+        }
+    }
+}
+
+#more-information {
+
+    & > h4 {
+        margin: 0;
+        margin-right: .5em;
+        font-size: 1.1em;
+        display: none;
+    }
+
+    & #goals__container {
+        max-height: 25vh;
+        overflow-y: auto;
+
+        & input {
+            display: none;
+
+            &:checked+label>div {
+                border: 3px solid $yellow;
+            }
+        }
+
+        & label > div {
+            border: 3px solid $white;
+            border-radius: $border-radius-small;
+        }
+
+        & div:first-of-type {
+            margin-bottom: 0;
+        }
+
+        & .goal-buttons__container {
+            align-items: center;
+            justify-content: space-between;
+
+            & div {
+                justify-content: initial!important;
+                width: fit-content;
+            }
+
+            & img {
+                width: 2em;
+                // margin-right: -2em;
+            }
+        }
+    }
+}
+
+#selected-members {
+    margin: 1em 0em;
+
+    & p {
+        padding: 0.4em 0.4em 0 0;
+        display: inline;
+
+        &::after {
+            content: ',';
+        }
+    }
+}

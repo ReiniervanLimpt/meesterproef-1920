@@ -1,0 +1,32 @@
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    max-width: 17em;
+    padding: 2em;
+    line-height: 175%;
+    color: $grey;
+    font-size: .8em;
+    transition: .3s ease-in-out;
+    overflow: hidden;
+    opacity: 1;
+
+    & a {
+        color: $grey;
+        text-decoration: underline;
+    }
+
+    & select {
+        background-color: $white;
+    }
+}
+
+.footer-shrinked {
+    opacity: 0;
+    max-width: 0;
+    z-index: 99;
+}
+
+.select {
+    margin-top: 1em;
+}

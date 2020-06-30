@@ -1,0 +1,149 @@
+<div id="page">
+    {{> new-header}}
+
+    <main id="content__container">
+        <div id="main__container" class="assessment-center__container">
+          <div class="container-head">
+            <img src="./images/assessment_icon.svg" alt="">
+            <h1>Assessment Center</h1>
+          </div>
+            <div id="button__container">
+                <input name="feedback-type" type="radio" id="received" value="received" checked>
+                <label for="received" tabindex="0">Assessment</label>
+
+                <input name="feedback-type" type="radio" id="sent" value="sent">
+                <label for="sent" tabindex="0">Assessment rapport</label>
+
+                <input name="feedback-type" type="radio" id="asked" value="asked">
+                <label for="asked" tabindex="0">Vrienden</label>
+            </div>
+
+            {{!-- persoonlijk --}}
+            <h4>Jouw assessments</h4>
+            <div id="messages__container">
+                <div class="assessment__container assessment__active__right">
+                    <h4 class="assessment__name">Sterke kanten</h4>
+                    <p class="assessment__short__des">Wat zijn jouw belangrijkste persoonlijke competenties?</p>
+                    <div class="assessment_stats">
+                        <p>6 minuten</p>
+                        <p>48 vragen</p>
+                    </div>
+                    <div class="assessment__progress__border">
+                        <div class="assessment__progress" style="width:70%">70%</div>
+                    </div>
+                    <button class="assessment__button">Vragenlijst</button>
+                </div>
+
+                <div class="assessment__container">
+                    <h4 class="assessment__name">Communicatie</h4>
+                    <p class="assessment__short__des">Wat zijn jouw belangrijkste persoonlijke competenties?</p>
+                    <div class="assessment__stats">
+                        <p>6 minuten</p>
+                        <p>48 vragen</p>
+                    </div>
+                    <div class="assessment__progress__border">
+                        <div class="assessment__progress" style="width: 45%">45%</div>
+                    </div>
+                    <button class="assessment__button">Vragenlijst</button>
+                </div>
+            </div>
+
+            {{!-- teamleden --}}
+            <h4 class="assessment__title__text">Assessments van teamgenoten</h4>
+            <div id="messages__container">
+                <div class="assessment__container ">
+                    <div class="assessment-image__container">
+                        <img class="assessment__image" src="/images/stefan.jpg" alt="">
+                        <p class="assessment__person">Stefan Gerrits</p>
+                    </div>
+
+                    <h4 class="assessment__name left__auto">Sterke kanten</h4>
+                    <div class="assessment_stats left__auto">
+                        <p>6 minuten</p>
+                        <p>48 vragen</p>
+                    </div>
+                    <div class="assessment__progress__border left__auto">
+                        <div class="assessment__progress" style="width:5%">5%</div>
+                    </div>
+                    <button class="assessment__button">Vragenlijst</button>
+                </div>
+
+                <div class="assessment__container">
+                    <div class="assessment-image__container">
+                        <img class="assessment__image" src="/images/reinier.jpg" alt="">
+                        <p class="assessment__person">Reinier van Limpt</p>
+                    </div>
+
+                    <h4 class="assessment__name left__auto">Sterke kanten</h4>
+                    <div class="assessment_stats left__auto">
+                        <p>6 minuten</p>
+                        <p>48 vragen</p>
+                    </div>
+                    <div class="assessment__progress__border left__auto">
+                        <div class="assessment__progress" style="width:10%">10%</div>
+                    </div>
+                    <button class="assessment__button">Vragenlijst</button>
+                </div>
+
+                <div class="assessment__container">
+                    <div class="assessment-image__container">
+                        <img class="assessment__image" src="/images/random1.jpg" alt="">
+                        <p class="assessment__person">Tim Testpersoon</p>
+                    </div>
+
+                    <h4 class="assessment__name left__auto">Communicatie</h4>
+                    <div class="assessment_stats left__auto">
+                        <p>6 minuten</p>
+                        <p>48 vragen</p>
+                    </div>
+                    <div class="assessment__progress__border left__auto">
+                        <div class="assessment__progress" style="width:10%">10%</div>
+                    </div>
+                    <button class="assessment__button">Vragenlijst</button>
+                </div>
+
+                <div class="assessment__container">
+                    <div class="assessment-image__container">
+                        <img class="assessment__image" src="/images/random3.jpg" alt="">
+                        <p class="assessment__person">Liesbeth van der testpersoon</p>
+                    </div>
+
+                    <h4 class="assessment__name left__auto">Sterke kanten</h4>
+                    <div class="assessment_stats left__auto">
+                        <p>6 minuten</p>
+                        <p>48 vragen</p>
+                    </div>
+                    <div class="assessment__progress__border left__auto">
+                        <div class="assessment__progress" style="width:10%">10%</div>
+                    </div>
+                    <button class="assessment__button">Vragenlijst</button>
+                </div>
+            </div>
+        </div>
+        <aside id="super-goals__container">
+            <h1 id="assessment-title">Assessment</h1>
+
+            <div id="messages__container" class="no-background">
+                <div class="assessment__container__right assessment__active__left">
+                    <h3 class="assessment__name">Sterke kanten</h3>
+                    <p class="assessment__short__des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique mauris commodo, feugiat nibh sed, hendrerit leo. Fusce ac varius lectus. Phasellus venenatis, leo in scelerisque faucibus, ipsum ante interdum enim, sed ultricies lorem libero eget arcu. Suspendisse pharetra quam nec consectetur aliquam. Curabitur vulputate hendrerit mi, ac suscipit eros venenatis at. Nunc bibendum felis ut arcu placerat porta vel vel diam. Nunc fringilla tortor nec massa suscipit vestibulum. Aliquam eleifend lorem vulputate magna sagittis gravida. </p>
+                    <div class="center__auto">
+                        <p><span class="bold">Tijd: </span>6 minuten</p>
+                        <p><span class="bold">Aantal vragen:</span> 48</p>
+                    </div>
+                    <div class="assessment__progress__border center__auto">
+                        <div class="assessment__progress" style="width:70%">70%</div>
+                    </div>
+                    <br>
+                    <button class="assessment__button center__auto">Vragenlijst</button>
+                </div>
+            </div>
+        </aside>
+    </main>
+</div>
+
+{{> thumbs-up}}
+
+{{> footer}}
+
+<script src="js/assessment.js"></script>
