@@ -1,160 +1,58 @@
-# Meesterproef @cmda-minor-web 1920
+# My meesterproef assignment: :thumbsup: The Praise app (Lyuvp)
+![home](https://user-images.githubusercontent.com/36195440/86042875-20dd3100-ba48-11ea-949e-ffb017659f49.png)
 
-In de Meesterproef ga je toepassen wat je in de Minor Web Development hebt geleerd.
-Voor de Meesterproef krijg je een opdracht van een echte opdrachtgever.
-Je gaat leren hoe je de geleerde kennis en skills kan gebruiken om een oplossing voor een probleem te ontwerpen. Testen, maken, evalueren, testen, maken ...
-
-<!-- Je kan kiezen uit verschillende projecten. Hier ga je 5 weken aan werken.  Voor de Meesterproef geef je met een eerste, tweede keuze en derde keuze aan welk project je graag wil doen. Daarna wordt door de coaches een indeling gemaakt. -->
+For my meesterproef assignment i chose to work with Lyvup on the Praise app.
 
 
-## Planning
+***
 
-| Planning | Maandag | Dinsdag | Woensdag | Donderdag | Vrijdag |
-|---|---|---|---|---|---|
-| <a href=#meesterproef---week-0>Week 0</a> | Projecten kiezen |   |   |   |   |
-| <a href=#meesterproef---week-1>Week 1</a> | Briefing opdrachtgever | [Debriefing](Debriefing.md) |   | <del>Hemelvaart</del> | <del>Hemelvaart</del> |
-| <a href=#meesterproef---week-2>Week 2</a> | Sprint 1 + standup & checkup |   | Codereviews | Designreviews | Sprint 2 + Meesterproef Q&A |
-| <a href=#meesterproef---week-3>Week 3</a> | <del>Pinksteren</del> |   | Codereviews | Designreviews | Sprint 3 |
-| <a href=#meesterproef---week-4>Week 4</a> | Standup & checkup |   | Codereviews | Designreviews | Sprint 4 |
-| <a href=#meesterproef---week-5>Week 5</a> | Standup & checkup |   |  | Final prototype  | EXPO |
+**The Lyvup Praise app helps teams to apply and develop skills they excell at, on the platform they can write compliments to their team members, take an assessment in which they can uncover their skills as well as set goals they wish to accomplish within their team.**
 
+#### :thumbsup: Giving praise
+Team members can give praise to eachother or multiple users, praise can be given on their goals as well or regular compliments.
+![praise](https://user-images.githubusercontent.com/36195440/86042826-04d98f80-ba48-11ea-9b5f-28ca3f0a2d94.png)
 
-
-## Werkwijze
-
-In de eerste week krijg je een briefing van de opdrachtgever en schrijf je een [debriefing](Debriefing.md).
-Dat is de opdracht en de doelstellingen in eigen woorden beschreven.
-Daarna ga je iedere week een proof-of-concept bespreken met je opdrachtgever.
-In week 5 presenteer je het eindresultaat.
-Hiervoor maak je een passende presentatie.
-
-Elke week zijn er coachingsmomenten gepland.
-Coaches voor de Meesterproef zijn: Joost Faber, Laurens Aarnoudse, Janno Kapritsias, Vasilis van Gemert en Koop Reynders.
-
-1. Maandag - Standup & checkup met je coach.
-2. Woensdag - Codereview met Joost, Laurens en Janno.
-3. Donderdag - Designreview met Vasilis en Koop.
-4. Vrijdag - Testen met de opdrachtgever.
+#### :triangular_flag_on_post: Setting goals
+Every user can also set goals, these can be tied to skills they wish to develop or apply while working with the team over a certain period of time.
+![goals](https://user-images.githubusercontent.com/36195440/86043221-a7920e00-ba48-11ea-87fd-283e351022e0.png)
 
 
-## Programma
+***
 
-### Meesterproef - Week 0 (11 mei)
-Deze week worden de projecten gepresenteerd en kun je een project kiezen.
+# The assignment
 
+The assigment consisted of two parts:
 
-- [Presentatie slides](https://docs.google.com/presentation/d/1cMSx0X2GEiu5WfBdRT2i9Jly3MxVHs0V-USg9hH4p2M/edit?usp=sharing)  
-- [Planning](https://docs.google.com/spreadsheets/d/1Oy8f5TSDYUA_qSwfTtYQTGjkNMUM0wAZDqDPHqgRpi4/edit?usp=sharing)
+## redesigning the frontend 
+> we were to enhance the current praise app with UX and styling as well as think of a strategy in which this version of the app could be stripped down for a lightweight version which could be passed around to other teams so that they might want to try out the "premium" version of the app. To learn what the app was supposed to do and what we could offer to our client this part of the assignemnt required from us to...
+* Write Use Cases and Customer Journeys to know what using the app would look and feel like :heavy_check_mark:
+* Enrich user interaction (with animations and UX prinicples) :heavy_check_mark:
 
+a. Apply corporate identity in the application
 
+b. make Front-End responsive
 
-### Meesterproef - Week 1 (18 - 22 mei)
-Deze week heb je je eerste afspraak met je opdrachtgever.
-Schrijf een [debriefing](Debriefing.md) van de opdracht en check deze met de opdrachtgever en je coach.
+c. Optimalize UX
 
-1. Maandag is de eerste afspraak met de opdrachtgever en heb je een standup en checkup met je coach.
-2. Dinsdag stuur je een debriefing.
-3. Donderdag en vrijdag is het Hemelvaart. Geen les.
+* Apply gamification to make the app more engaging :heavy_check_mark:
 
+## The "lunchbox" :hamburger:
+* Develop a "lunchbox"version of the app (better described as a lightweight demo version with less funtionality) :heavy_check_mark:
+* Design an onboarding process which introduces the app to the user :heavy_check_mark:
+* Allow users of the lunchbox to give feedback to the developers
+* Implement member gets member functionality so users can invite other teams to use the lightweight app :heavy_check_mark:
+* Design a newsletter template
 
+## Our clients
 
+* Dalton Noland, entrepeneur
+* Ivo Jansen, co-woner Lyvup
 
-### Meesterproef - Week 2 (25 - 29 mei )
-Deze week ga je twee keer testen bij de opdrachtgever.
-Maandag en vrijdag ga je de opdrachtgever laten zien wat je hebt gemaakt.
-
-1. Maandag heb je een standup en checkup met je coach.
-2. Woensdag is de eerste codereviews.
-3. Donderdag is er een designreview.
-4. Vrijdag is er een Q&A over de verwachtingen, criteria, leerdoelen en beoordeling
-
-
-
-
-### Meesterproef - Week 3 (1 - 5 juni)
-De derde week ga je weer testen bij de opdrachtgever. Aan het eind van de week laat je de 3e sprint zien.
-
-
-1. Maandag is het tweede pinksterdag. Geen les. Wanneer ga je de 3e sprint laten zien aan je klant?
-2. Woensdag is er een codereview.
-3. Donderdag is er een designreview.
+## my team
+* Stefan Gerrits
+* Monika Streljajeva
+* Michel Abdad
+* Max weijers
+* Reinier van Limpt
 
 
-
-### Meesterproef - Week 4 (8 - 12 juni)
-Deze week ga je weer testen bij de opdrachtgever. Aan het eind van de week laat je de 4e sprint zien.
-
-1. Maandag heb je een standup en checkup met je coach.
-2. Woensdag is er een codereview.
-3. Donderdag is er een designreview.
-
-
-
-### Meesterproef - Week 5 (15 - 19 juni)
-Dit is de laatste week van de Meesterproef. Donderdag laat je de je het final prototype zien aan je opdrachtgever. Vrijdag is de EXPO, dan kun je je werk laten zien aan collega's en wordt je werk beoordeeld.
-
-1. Maandag heb je een standup en checkup met je coach.
-2. Donderdag final prototype bij de opdrachtgever.
-3. Vrijdag EXPO. Presentatie en beoordeling van de projecten.
-
-
-
-
-
-## Criteria en beoordeling
-
-Met de Meesterproef laat je zien wat je hebt geleerd tijdens de minor.
-Studenten die de vakken hebben gehaald kunnen aan de Meesterproef beginnen.
-
-De Meesterproef bestaat uit 3 projectweken en een eindproject van 5 weken.
-De 3 projectweken,
-[PW1](https://github.com/cmda-minor-web/project-1-1920),
-[PW2](https://github.com/cmda-minor-web/project-2-1920) en
-[PW3](https://github.com/cmda-minor-web/project-3-1920) tellen mee als AVV.
-
-Het eindproject wordt beoordeeld op een Design rationale, een Product biografie en een reflectie op het eigen niveau.
-Én of de klant blij is met het gemaakte project.
-
-### Design rationale
-In de Design rationale schrijf je de [debriefing](Debriefing.md), de probleem-definitie, toon je de oplossing en schrijf je een uitleg van de code.
-De Design rationale is een verantwoording van je ontwerp.
-
-### Product biografie
-In de meesterproef doorloop je een iteratief proces.
-Elke week bespreek je met je opdrachtgever je vorderingen en ideeën.
-In de Product biografie hou je stap voor stap bij wat je allemaal hebt gedaan.
-Je schrijft over het proces, de werkwijze en de planning.
-Ook schetsen, testen, uitprobeersels en inspiratie zijn deel van de Product biografie.
-
-### Reflectie op eigen niveau
-Wekelijks reflecteer je systematisch op je werk.
-In een aantal gesprekken _reviewen_ we de code en het design van je project.
-Dit doen we op basis van de rubrics van de verschillende vakken.
-Zo krijg je een goed beeld van je eigen niveau, mogelijke aandachtspunten in techniek, interactie en/of aspecten van het design-proces waar je je nog op kan verbeteren.
-
-### Een blije klant
-Voor de klant werk je aan een bestaand product of maak je een (werkend) prototype. Gericht op een bepaalde gebruikersgroep, geschikt voor verschillende apparaten, met echte data, én een goede UX. (Jeweettoch)
-Een blije klant is een goede klant.
-Soms ontkom je er niet aan dat je een beetje eigenwijs moet doen.
-Dan doe je juist niet wat de klant wil en probeer je de opdrachtgever te overtuigen met een proof-of-concept.
-En soms kan het voorkomen dat het proces niet helemaal soepel loopt.
-Dat hoort erbij en daar leer je van.
-Aan het eind van het project vragen we de klant feedback op het geleverde werk en het proces.
-
-<!-- Add a link to your live demo in Github Pages 🌐-->
-
-<!-- ☝️ replace this description with a description of your own work -->
-
-<!-- replace the code in the /docs folder with your own, so you can showcase your work with GitHub Pages 🌍 -->
-
-<!-- Add a nice poster image here at the end of the week, showing off your shiny frontend 📸 -->
-
-<!-- Maybe a table of contents here? 📚 -->
-
-<!-- How about a section that describes how to install this project? 🤓 -->
-
-<!-- ...but how does one use this project? What are its features 🤔 -->
-
-<!-- Maybe a checklist of done stuff and stuff still on your wishlist? ✅ -->
-
-<!-- How about a license here? 📜 (or is it a licence?) 🤷 -->
